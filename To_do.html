@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="To_do.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>To-Do List</h1>
+      <label for="taskInput"></label>
+      <input
+        type="text"
+        id="taskInput"
+        name="taskInput"
+        placeholder="Add a new task"
+      />
+      <button id="addTaskBtn">Add Task</button>
+      <div class="filters">
+        <button id="allTasks" class="filterBtn">All</button>
+        <button id="completedTasks" class="filterBtn">Completed</button>
+        <button id="incompleteTasks" class="filterBtn">Incomplete</button>
+      </div>
+      <ul id="taskList"></ul>
+      <div id="pagination" class="pagination">
+        <button id="prevPage" class="pageBtn">Previous</button>
+        <button id="nextPage" class="pageBtn">Next</button>
+      </div>
+    </div>
+
+    <script src="To_do.js"></script>
+  </body>
+</html>

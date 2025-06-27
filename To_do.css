@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    background-image: url("download.jfif") ;
+    border-radius: 20px;
+    border:15px solid black; 
+    height: 100vh;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background: linear-gradient(135deg, #3a1606, #3a1606); 
+  
+}
+h1 {
+    text-align: center;
+    color: aliceblue;
+}
+
+#taskInput {
+    width: 90%;
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#addTaskBtn {
+    padding: 10px;
+    border: none;
+    background: #b8b55c;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#addTaskBtn:hover {
+    background: #265726;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+button.edit, button.delete, button.complete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #328e1b;
+    margin-left: 5px;
+}
+
+button.edit:hover, button.delete:hover, button.complete:hover {
+    color: #084201;
+}
+.filters {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.filterBtn {
+    padding: 10px;
+    border: none;
+    background: #ddd;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.filterBtn.active {
+    background: #b8b55c;
+    color: white;
+}
+
+.filterBtn:hover {
+    background: #265726;
+}
+.pagination {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pageBtn {
+    padding: 10px;
+    border: none;
+    background: #ddd;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pageBtn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
